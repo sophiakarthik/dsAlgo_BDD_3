@@ -1,23 +1,21 @@
 Feature: Array Page Feature
 
 Background:
-User has already logged in to the application
+Given User is logged in to the application
 |username||password|
 |SirishaSA||Success4you!|
 
 Scenario: Array Page
-Given User is logged in to the application
+Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up
 
 
-Scenario:  The user is in the Array page after logged in
-Given Array Page opens up
+
 When User clicks on "Arrays in Python" button
 Then User should be redirected to "Arrays in Python" page
 
-Scenario: Array PAge Count
-Given User is on ArrayPage
+
 When User gets Array Section
 |Arrays in Python|
 |Arrays Using List|
@@ -25,6 +23,17 @@ When User gets Array Section
 |Applications of Array|
 |Practice Questions|
 And Array Section count should be 5
+
+
+When User clicks on Try Here button
+Then User should be redirected to next page
+
+When User enters the text in the TextBox "print(Hello)"
+And Clicks on the Run button
+Then Result is displayed on the console
+
+
+
 
 
 

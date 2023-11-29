@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 28, 2023 07:43:50 PM</span></a>
+<a href="#"><span class="badge badge-primary">Nov 29, 2023 02:36:23 PM</span></a>
 </li>
 </ul>
 </div>
@@ -52,11 +52,6 @@
 <span class="ico"><i class="fa fa-list"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
-</a>
-</li>
 <li class="nav-item dropdown" onclick="toggleView('exception-view')">
 <a id="nav-exception" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-bug"></i></span>
@@ -71,19 +66,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 28, 2023 07:43:50 PM</h3>
+<h3>Nov 29, 2023 02:36:23 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 28, 2023 07:44:23 PM</h3>
+<h3>Nov 29, 2023 02:36:34 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'>
-<b>2</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='33%'><b>1</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>6</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='33%'><b>3</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='80%'><b>36</b> steps passed</small></div>
+<div><small data-tooltip='78%'><b>11</b> steps passed</small></div>
 <div>
-<small data-tooltip='6%'><b>3</b> steps failed,
-<b>6</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='7%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,67 +162,10 @@
 </div></div>
 <script>
 var timeline = {
-"Array Page Feature":11.049,"dsAlgoProject_Register":16.745,"feature to open dsago url and get started":3.877
+"Array Page Feature":9.779
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@tag3</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tag1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tag2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tag5</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tag4</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@tag</td>
-<td>5</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
@@ -259,21 +197,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
+passParent: 0,
 failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 6,
-failChild: 3,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 36,
-failGrandChild: 3,
+passGrandChild: 11,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 6,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -287,16 +225,9 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@tag3</a><a class="dropdown-item" href="#">@tag1</a><a class="dropdown-item" href="#">@tag2</a><a class="dropdown-item" href="#">@tag5</a><a class="dropdown-item" href="#">@tag4</a><a class="dropdown-item" href="#">@tag</a>
 </ul>
 </li>
 </ul>
@@ -309,7 +240,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Array Page Feature</p>
             <p class="text-sm">
-              <span>7:43:51 PM</span> / <span>00:00:11:049</span>
+              <span>2:36:25 PM</span> / <span>00:00:09:779</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -318,9 +249,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Array Page Feature</h5>
-<span class='badge badge-success'>11.28.2023 7:43:51 PM</span>
-<span class='badge badge-danger'>11.28.2023 7:44:02 PM</span>
-<span class='badge badge-default'>00:00:11:049</span>
+<span class='badge badge-success'>11.29.2023 2:36:25 PM</span>
+<span class='badge badge-danger'>11.29.2023 2:36:34 PM</span>
+<span class='badge badge-default'>00:00:09:779</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -341,65 +272,98 @@ eventsCount: 5,
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step fail-bg" title="StepDefinitions.ArrayPageSteps.user_is_logged_in_to_the_application(io.cucumber.datatable.DataTable)">
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_is_logged_in_to_the_application(io.cucumber.datatable.DataTable)">
                 <span>Given User is logged in to the application</span>
+      <div><table class='markup-table table '><tr><td>username</td><td></td><td>password</td></tr><tr><td>SirishaSA</td><td></td><td>Success4you!</td></tr></table>
+      </div>
       <div>
-        <textarea disabled class="code-block">io.cucumber.core.exception.CucumberException: Step [User is logged in to the application] is defined with 1 parameters at 'StepDefinitions.ArrayPageSteps.user_is_logged_in_to_the_application(io.cucumber.datatable.DataTable)'.
-However, the gherkin step has 0 arguments.
-Step text: User is logged in to the application
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:83)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:42)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_is_on_home_page()">
+                <span>Given User is on Home Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_clicks_on_the_get_started_button_under_array_section()">
+                <span>When User Clicks on the Get Started button under Array Section</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.array_page_opens_up()">
+                <span>Then Array Page opens up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_clicks_on_button(java.lang.String)">
+                <span>When User clicks on "Arrays in Python" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_should_be_redirected_to_page(java.lang.String)">
+                <span>Then User should be redirected to "Arrays in Python" page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.user_gets_array_section(io.cucumber.datatable.DataTable)">
+                <span>When User gets Array Section</span>
+      <div><table class='markup-table table '><tr><td>Arrays in Python</td></tr><tr><td>Arrays Using List</td></tr><tr><td>Basic Operations in Lists</td></tr><tr><td>Applications of Array</td></tr><tr><td>Practice Questions</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.array_section_count_should_be(java.lang.Integer)">
+                <span>And Array Section count should be 5</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.User_clicks_on_Try_Here_button()">
+                <span>When User clicks on Try Here button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinitions.ArrayPageSteps.User_should_be_redirected_to_next_page()">
+                <span>Then User should be redirected to next page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="StepDefinitions.ArrayPageSteps.user_enters_the_text_in_the_text_box(java.lang.String)">
+                <span>When User enters the text in the TextBox "print(Hello)"</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=119.0.6045.199)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.6', java.version: '21'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d425e1577cf5cfacabd4dc03cae81292, sendKeysToElement {id=904257363AE7EBACA3379E2A71BBD0FF_element_27, value=[Ljava.lang.CharSequence;@74d6736}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.199, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/x9/6h2f1qrx4gg...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61109}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61109/devtoo..., se:cdpVersion: 119.0.6045.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d425e1577cf5cfacabd4dc03cae81292)] -> class name: container]
+Session ID: d425e1577cf5cfacabd4dc03cae81292
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:111)
+	at Pages.ArrayPage.entrTextInTryEditorTxtBox(ArrayPage.java:88)
+	at StepDefinitions.ArrayPageSteps.user_enters_the_text_in_the_text_box(ArrayPageSteps.java:111)
+	at ✽.User enters the text in the TextBox "print(Hello)"(file:///Users/kollurusridhar/eclipse-workspace/dsAlgo_BDD/src/test/resources/features/ArrayPage.feature:31)
 </textarea>
       
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.user_clicks_on_the_get_started_button_under_array_section()">
-                <span>When User Clicks on the Get Started button under Array Section</span>
+              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.clicks_on_the_run_button()">
+                <span>And Clicks on the Run button</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.array_page_opens_up()">
-                <span>Then Array Page opens up</span>
+              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.result_is_displayed_on_the_console()">
+                <span>Then Result is displayed on the console</span>
       <div>Step skipped
       </div>
               </div>
@@ -411,377 +375,6 @@ Step text: User is logged in to the application
     
     </div></div>
 </div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>The user is in the Array page after logged in</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" title="StepDefinitions.ArrayPageSteps.array_page_opens_up()">
-                <span>Given Array Page opens up</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "Pages.ArrayPage.ArrayPageTitle()" because "this.page" is null
-	at StepDefinitions.ArrayPageSteps.array_page_opens_up(ArrayPageSteps.java:39)
-	at ✽.Array Page opens up(file:///Users/kollurusridhar/eclipse-workspace/dsAlgo_BDD/src/test/resources/features/ArrayPage.feature:15)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.user_clicks_on_button(java.lang.String)">
-                <span>When User clicks on "Arrays in Python" button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.user_should_be_redirected_to_page(java.lang.String)">
-                <span>Then User should be redirected to "Arrays in Python" page</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>AppHooks.ApplicationHooks.teardown(io.cucumber.java.Scenario)</span>
-      <div>The _ user _ is _ in _ the _ Array _ page _ after _ logged _ in
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>Array PAge Count</div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" >
-                <span>Given User is on ArrayPage</span>
-      <div>Step undefined
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.user_gets_array_section(io.cucumber.datatable.DataTable)">
-                <span>When User gets Array Section</span>
-      <div><table class='markup-table table '><tr><td>Arrays in Python</td></tr><tr><td>Arrays Using List</td></tr><tr><td>Basic Operations in Lists</td></tr><tr><td>Applications of Array</td></tr><tr><td>Practice Questions</td></tr></table>
-      </div>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.ArrayPageSteps.array_section_count_should_be(java.lang.Integer)">
-                <span>And Array Section count should be 5</span>
-      <div>Step skipped
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="26"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">dsAlgoProject_Register</p>
-            <p class="text-sm">
-              <span>7:44:02 PM</span> / <span>00:00:16:745</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">dsAlgoProject_Register</h5>
-<span class='badge badge-success'>11.28.2023 7:44:02 PM</span>
-<span class='badge badge-danger'>11.28.2023 7:44:19 PM</span>
-<span class='badge badge-default'>00:00:16:745</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"> I want to use this template for my feature file</div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="27"><span class="badge log pass-bg mr-2">Pass</span>Register</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_opens_register_page()">
-                <span>Given The user opens Register Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_clicks_button_with_all_fields_empty(java.lang.String)">
-                <span>When The user clicks "Register" button with all fields empty</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.it_should_display_an_error_below_username_textbox(java.lang.String)">
-                <span>Then It should display an error "Please fill out this field" below Username textbox</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>Check register is not successful with just username credentials entered</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_opens_register_page()">
-                <span>Given The user opens Register Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_username(java.lang.String)">
-                <span>When User enters Username "SirishaS"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_leaves_the_password_textbox_blank()">
-                <span>And User leaves the password textbox blank</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_clicks_on_the_register_button1()">
-                <span>And User clicks on the Register button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.it_should_display_an_error_below_password_textbox(java.lang.String)">
-                <span>Then It should display an error "Please fill out this field" below password textbox</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Check register is not successful with Username and password credentials entered</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_opens_register_page()">
-                <span>Given The user opens Register Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_username(java.lang.String)">
-                <span>When User enters Username "SirishaS"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_the_password(java.lang.String)">
-                <span>And User enters the password "Success4you!"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.leaves_the_password_confirmation_textbox_blank()">
-                <span>And leaves the password confirmation textbox blank</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_clicks_on_the_register_button()">
-                <span>And User Clicks on the Register button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.it_should_display_an_error_below_password_confirmation_textbox(java.lang.String)">
-                <span>Then It should display an error "Please fill out this field" below password confirmation textbox</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="56"><span class="badge log pass-bg mr-2">Pass</span>Check register is not successful with mismatch password and password confirmation credentials entered</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_opens_register_page()">
-                <span>Given The user opens Register Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_username(java.lang.String)">
-                <span>When User enters Username "SirishaS"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_the_password(java.lang.String)">
-                <span>And User enters the password "Success4you!"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.enters_differnt_value_in_the_password_confirmation_textbox(java.lang.String)">
-                <span>And enters differnt value in the password confirmation textbox "Successnot4you"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_clicks_on_the_register_button()">
-                <span>And User Clicks on the Register button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.it_should_display_an_error(java.lang.String)">
-                <span>Then It should display an error "password mismatch"</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>User enters valid Username,Password and Password Confirmation and clicks on the register button then account should be created</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.the_user_opens_register_page()">
-                <span>Given The user opens Register Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_username(java.lang.String)">
-                <span>When User enters Username "SirishaSA"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_enters_the_password(java.lang.String)">
-                <span>And User enters the password "Success4you!"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.enters_differnt_value_in_the_password_confirmation_textbox(java.lang.String)">
-                <span>And enters differnt value in the password confirmation textbox "Success4you!"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_clicks_on_the_register_button()">
-                <span>And User Clicks on the Register button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.account_should_be_created_with_the_specified_username_and_password()">
-                <span>And Account should be created with the specified username and password</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.RegisterPageSteps.user_should_be_logged_in_with_the_specified_username()">
-                <span>Then User should be logged in with the specified username</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="79"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">feature to open dsago url and get started</p>
-            <p class="text-sm">
-              <span>7:44:19 PM</span> / <span>00:00:03:877</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">feature to open dsago url and get started</h5>
-<span class='badge badge-success'>11.28.2023 7:44:19 PM</span>
-<span class='badge badge-danger'>11.28.2023 7:44:23 PM</span>
-<span class='badge badge-default'>00:00:03:877</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=79</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="80"><span class="badge log pass-bg mr-2">Pass</span>validate dsalgo url</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.browser_is_open()">
-                <span>Given Browser is open</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.user_clicks_on_get_started()">
-                <span>When user clicks on get started</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.when_user_enters_signin_button()">
-                <span>And when user enters signin button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.user_enter_credentials_username_as(java.lang.String)">
-                <span>And user enter credentials username as "SirishaSA"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.user_left_password_box_empty(java.lang.String)">
-                <span>And user left password box empty "Success4you!"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.user_click_login_button()">
-                <span>And user click login button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="StepDefinitions.SigninSteps.it_should_display_message()">
-                <span>Then it should display message</span>
       <div>
       </div>
               </div>
@@ -800,283 +393,11 @@ Step text: User is logged in to the application
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tag3</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag3</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:09 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='45'>Check register is not successful with Username and password credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with Username and password credentials entered</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tag1</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag1</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:02 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='27'>Register</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Register</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tag2</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag2</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:06 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='35'>Check register is not successful with just username credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with just username credentials entered</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tag5</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag5</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:16 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='67'>User enters valid Username,Password and Password Confirmation and clicks on the register button then account should be created</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.User enters valid Username,Password and Password Confirmation and clicks on the register button then account should be created</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@tag4</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag4</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:13 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='56'>Check register is not successful with mismatch password and password confirmation credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with mismatch password and password confirmation credentials entered</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>5</span>
-</span>
-<p class="name">@tag</p>
-<p class="duration text-sm">5 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@tag</h4>
-<span status="pass" class='badge log pass-bg'>5 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:02 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='27'>Register</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Register</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:06 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='35'>Check register is not successful with just username credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with just username credentials entered</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:09 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='45'>Check register is not successful with Username and password credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with Username and password credentials entered</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:13 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='56'>Check register is not successful with mismatch password and password confirmation credentials entered</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.Check register is not successful with mismatch password and password confirmation credentials entered</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:44:16 PM</td>
-<td>
-<a href="#" class="linked" test-id='26' id='67'>User enters valid Username,Password and Password Confirmation and clicks on the register button then account should be created</a>
-<div class="">
-<span class="badge badge-default">dsAlgoProject_Register.User enters valid Username,Password and Password Confirmation and clicks on the register button then account should be created</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -1085,12 +406,12 @@ Step text: User is logged in to the application
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.NullPointerException</p>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.NullPointerException</h4>
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1104,47 +425,11 @@ Step text: User is logged in to the application
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:43:59 PM</td>
+<td>14:36:34 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='13'>Given Array Page opens up</a>
+<a href="#" class="linked" test-id='1' id='15'>When User enters the text in the TextBox "print(Hello)"</a>
 <div class="">
-<span class="badge badge-default">Array Page Feature.The user is in the Array page after logged in.Given Array Page opens up</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">io.cucumber.core.exception.CucumberException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>io.cucumber.core.exception.CucumberException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:43:56 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='5'>Given User is logged in to the application</a>
-<div class="">
-<span class="badge badge-default">Array Page Feature.Array Page.Given User is logged in to the application</span>
+<span class="badge badge-default">Array Page Feature.Array Page.When User enters the text in the TextBox "print(Hello)"</span>
 </div>
 </td>
 </tr>

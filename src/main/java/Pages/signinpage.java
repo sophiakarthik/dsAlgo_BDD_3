@@ -32,10 +32,16 @@ public void password(String passwod) {
 }
 public void loginbtn() {
 	driver.findElement(login).click();
-
-
-
-
-
 }
+
+public ArrayPage dologin(String un, String pwd) {
+	driver.findElement(usernm).sendKeys(un);
+	driver.findElement(passwd).sendKeys(pwd);
+	driver.findElement(login).click();
+	return new ArrayPage(driver);
+}
+
+
+
+
 }
