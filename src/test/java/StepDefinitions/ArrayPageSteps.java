@@ -6,6 +6,7 @@ import java.util.Map;
 import Factory.DriverFactory;
 import Pages.ArrayPage;
 import Pages.RegisterPage;
+import Pages.StackPage;
 import Pages.signinpage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -17,6 +18,7 @@ public class ArrayPageSteps {
 	
 	private signinpage sgn = new signinpage(Factory.DriverFactory.getDriver());
 	private ArrayPage page;
+	
 	
 	@Given("User is logged in to the application")
 	public void user_is_logged_in_to_the_application(DataTable credTable) {
