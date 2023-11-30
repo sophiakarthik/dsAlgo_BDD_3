@@ -9,8 +9,9 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = {"src/test/resources/features/ArrayPage.feature"},
 		glue = {"StepDefinitions", "AppHooks"},
+		//tags ="@Smoke",
 		plugin = {"pretty",
-				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",				
 		}		
 				)
 

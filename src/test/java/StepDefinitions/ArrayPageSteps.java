@@ -108,7 +108,7 @@ public class ArrayPageSteps {
 	}
 	@When("User enters the text in the TextBox {string}")
 	public void user_enters_the_text_in_the_text_box(String TryEditortxt) {
-	    page.entrTextInTryEditorTxtBox(TryEditortxt);
+	    page.entrTextInTryEditorTxtBox();
 	}
 
 	@When("Clicks on the Run button")
@@ -120,6 +120,35 @@ public class ArrayPageSteps {
 	public void result_is_displayed_on_the_console() {
 	    page.Consoleoutput();
 	}
+	@When("User clicks on Arrays Using List button")
+	public void user_clicks_on_arrays_using_list_button() {
+	    page.ArrayUsingList();
+	}
+
+	@Then("User should be redirected to Arrays Using List page")
+	public void user_should_be_redirected_to_arrays_using_list_page() {
+	    page.ChkArrayUsingListsPage();
+	    System.out.println("I completed..... Smoking,,,");
+	}
 	
 
+	@When("User clicks on Basic Operations in Lists button")
+	public void user_clicks_on_basic_operations_in_lists_button() {
+	   page.BsicOprtionInLst();
+	}
+
+	@Then("User should be redirected to Basic Operations in Lists page")
+	public void user_should_be_redirected_to_basic_operations_in_lists_page() {
+	    page.ChkBasicOperationListPage();
+	}
+	@When("User clicks on Applications of Array button")
+	public void user_clicks_on_applications_of_array_button() {
+	    page.AppsOfArray();
+	}
+
+	@Then("User should be redirected to Applications of Array page")
+	public void user_should_be_redirected_to_applications_of_array_page() {
+	   page.ChkApplicationOfArrayPage();	   
+	}
+	
 }
