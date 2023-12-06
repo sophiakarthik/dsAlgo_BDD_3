@@ -94,6 +94,7 @@ public class RegisterPageSteps {
 
 		  @Then("User should be logged in with the specified username")
 		  public void user_should_be_logged_in_with_the_specified_username() {
+			  
 		      
 		  }
 

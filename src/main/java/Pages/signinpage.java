@@ -39,9 +39,8 @@ public ArrayPage dologin(String un, String pwd) {
 	driver.findElement(passwd).sendKeys(pwd);
 	driver.findElement(login).click();
 	return new ArrayPage(driver);
+	
 }
-
-
 
 
 }

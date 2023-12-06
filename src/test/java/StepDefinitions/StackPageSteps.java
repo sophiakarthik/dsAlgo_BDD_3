@@ -68,6 +68,7 @@ public class StackPageSteps {
 	@Then("User should be redirected to Applications page")
 	public void user_should_be_redirected_to_applications_page() {
 		StkPage.ApplicationPage();
+		
 	}
 
 }
