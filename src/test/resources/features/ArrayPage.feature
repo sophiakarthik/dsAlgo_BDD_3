@@ -5,7 +5,6 @@ Given User is logged in to the application
 |username||password|
 |SirishaSA||Success4you!|
 
-@working
 Scenario: Array Page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
@@ -29,7 +28,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-@Regression
+
 Scenario: Array Page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
@@ -45,7 +44,7 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-@sanity
+
 Scenario: Array Page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
@@ -61,8 +60,8 @@ When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
 
-@Smoke
-Scenario: Array Pagesssss
+
+Scenario: Array Page
 Given User is on Home Page
 When User Clicks on the Get Started button under Array Section
 Then Array Page opens up
@@ -76,6 +75,79 @@ Then User should be redirected to next page
 When User enters the text in the TextBox "print(Hello)"
 And Clicks on the Run button
 Then Result is displayed on the console
+
+Scenario: Array Page - Arrays In Python -  Practice Questions in Lists button - Search the array Link
+Given User is on Home Page
+When User Clicks on the Get Started button under Array Section
+Then Array Page opens up
+
+When User clicks on Practice Questions in Lists button
+Then User should be redirected to Practice Questions in Lists page
+
+When User clicks on Search the array Link
+Then User should be redirected to next page
+
+When User enters the text in the TextBox "print(Hello)"
+And  Clicks on the Run button
+Then Result is displayed on the console
+And  Clicks on the submit button
+Then error message is displayed on the console
+
+
+Scenario: Array Page - Arrays In Python - Practice Questions in Lists button - Max Consecutive Ones Link
+Given User is on Home Page
+When User Clicks on the Get Started button under Array Section
+Then Array Page opens up
+
+When User clicks on Practice Questions in Lists button
+Then User should be redirected to Practice Questions in Lists page
+
+When User clicks on Max Consecutive Ones Link
+Then User should be redirected to next page
+
+When User enters the text in the TextBox "print(Hello)"
+And  Clicks on the Run button
+Then Result is displayed on the console
+And User refresh the page
+And User enters the text in the TextBox "print(Hello)"
+And  Clicks on the submit button
+Then error message is displayed on the console
+
+
+Scenario: Array Page - Arrays In Python - Practice Questions in Lists button - Find Numbers with Even Number of Digits Link
+Given User is on Home Page
+When User Clicks on the Get Started button under Array Section
+Then Array Page opens up
+
+When User clicks on Practice Questions in Lists button
+Then User should be redirected to Practice Questions in Lists page
+
+When User clicks on Find Numbers with Even Number of Digits Link
+Then User should be redirected to next page
+
+When User enters the text in the TextBox "print(Hello)"
+And  Clicks on the Run button
+Then Result is displayed on the console
+And  Clicks on the submit button
+Then error message is displayed on the console
+
+
+Scenario: Array Page - Arrays In Python - Practice Questions in Lists button - Squares of  a Sorted Array Link
+Given User is on Home Page
+When User Clicks on the Get Started button under Array Section
+Then Array Page opens up
+
+When User clicks on Practice Questions in Lists button
+Then User should be redirected to Practice Questions in Lists page
+
+When User clicks on Squares of  a Sorted Array Link
+Then User should be redirected to next page
+
+When User enters the text in the TextBox "print(Hello)"
+And  Clicks on the Run button
+Then Result is displayed on the console
+And  Clicks on the submit button
+Then error message is displayed on the console
 
 
 

@@ -7,7 +7,7 @@ Given User is logged in to the application
 |SirishaSA||Success4you!|
 
 Scenario: DataStructure Page
-Given User is on Home Page
+  Given User is on Home Page
   When user clicks on datatructure  get started
   Then it should go to data structure home page 
   

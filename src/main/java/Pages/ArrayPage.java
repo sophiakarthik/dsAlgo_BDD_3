@@ -6,8 +6,10 @@ import java.util.List;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v117.page.Page;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -30,6 +32,14 @@ public class ArrayPage {
 	By ArrayUsingListBtn = By.linkText("Arrays Using List");
 	By BasicOperationsInListBtn = By.linkText("Basic Operations in Lists");
 	By AppsOfArray = By.linkText("Applications of Array");
+	By PracticeQues = By.linkText("Practice Questions");
+	By SearchArry = By.linkText("Search the array");
+	By SubmitBtn = By.xpath("//*[@type='submit']");
+	By ErrorMessage = By.xpath("//pre[@id='output']");
+	By MaxConseOnes = By.linkText("Max Consecutive Ones");
+	By EvnNumOfDigits = By.linkText("Find Numbers with Even Number of Digits");
+	By SquaresOfSortedArray = By.linkText("Squares of a Sorted Array");
+	
 
 	private By ArraySections = By.cssSelector("div#content a");
 
@@ -79,20 +89,36 @@ public class ArrayPage {
 		}	
 	}
 	public void TryHere() {
-		System.out.println("I did in try here page....");
-		driver.findElement(TryHereBtn).click();
+				driver.findElement(TryHereBtn).click();
 	}
 	public void TryEditorPage() {
 		driver.getCurrentUrl();
 		System.out.println("User is on the try editor page :"+ driver.getCurrentUrl());
 	    System.out.println("Current Title of the page is:"+ driver.getTitle());
 	}
+	
+//	public static void TextIndentation(WebDriver driver, WebElement pythonElement, int row, int space,boolean flag) {
+//		 Actions action = new Actions(driver);
+//	        //Keys cmdCtrl = Platform.getCurrent().is(Platform.MAC) ? Keys.COMMAND : Keys.CONTROL;
+//		for(int i=1;i<=row;i++) {
+//		      action.sendKeys(Keys.ARROW_UP).keyUp(Keys.SHIFT).perform();
+//		       for(int j=1;j<=space;j++) {
+//	            if(i==1 && flag) action.sendKeys(Keys.BACK_SPACE).perform();
+//	            else action.sendKeys(Keys.DELETE).perform();
+//			   }
+//		}
+//	}
+	
 	public void entrTextInTryEditorTxtBox() {
 		Actions action = new Actions(driver);
+		for(int i=1; i<=50; i++)	{
+			
+		 action.sendKeys(Keys.DELETE).perform();
+	
+		}
 		WebElement ele = driver.findElement(TryEditorTxtBox);
 		WebDriverWait Wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 		Wait.until(ExpectedConditions.visibilityOf(ele));
-		
 		String TextToInput = "print 'Hello'";
 		action.sendKeys(ele, TextToInput).perform();
 		System.out.println("I entered text box");
@@ -103,7 +129,7 @@ public class ArrayPage {
 	}
 	public void Consoleoutput() {
 	String output =	driver.findElement(ConsoleOutput).getText();
-	System.out.println(output);
+	System.out.println("Console Output: "+ output);
 	}
 	public void ArrayUsingList() {
 		driver.findElement(ArrayUsingListBtn).click();
@@ -130,5 +156,31 @@ public class ArrayPage {
 		System.out.println("Application of Array Page Title is :"+ driver.getTitle());
 		
 	}
+	public void PracticeQuesLink() {
+		driver.findElement(PracticeQues).click();
+	}
+	public void SearchArray() {
+		driver.findElement(SearchArry).click();
+	}
+	public void SubmitBtn() {
+		driver.findElement(SubmitBtn).click();
+	}
+	public void ErrorMsg() {
+		String Msg = driver.findElement(ErrorMessage).getText();
+		System.out.println("Error Message: "+ Msg);
+	}
+	public void MaxConsOnes() {
+		driver.findElement(MaxConseOnes).click();
+	}
+	public void EvenNoOfDigits() {
+		driver.findElement(EvnNumOfDigits).click();
+	}
+	public void SquaresOfSortedArray() {
+		driver.findElement(SquaresOfSortedArray).click();
+	}
+	public void PageRefresh() {
+		driver.navigate().refresh();
+	}
+	
 
 }

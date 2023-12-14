@@ -8,13 +8,33 @@ import Pages.ArrayPage;
 import Pages.DataStructurePage;
 import Pages.TreePage;
 import Pages.signinpage;
+import Pages.HomePage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class DataStructurePageSteps {
+	
+	private signinpage sgnpage = new signinpage(Factory.DriverFactory.getDriver());
+	
 	private DataStructurePage DataStrucPage = new DataStructurePage(Factory.DriverFactory.getDriver());
+	
+	@Given("User is logged in to the application")
+	public void user_is_logged_in_to_the_application(DataTable credTable) {
+	List<Map<String, String>> credentialList = credTable.asMaps();
+	String UserName = credentialList.get(0).get("username");
+	String Password = credentialList.get(0).get("password");
+	
+	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
+
+	DataStrucPage = sgnpage.dologin(UserName, Password);
+	    
+	}
+	@Given ("User is on Home Page")
+	public void user_is_on_home_page(){
+		DataStrucPage.getHomePageTitle();
+	}
 	@When("user clicks on datatructure  get started")
 	public void user_clicks_on_datatructure_get_started() {
 		DataStrucPage.datastructuregetstartbtn();

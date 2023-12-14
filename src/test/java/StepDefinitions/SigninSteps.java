@@ -10,7 +10,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SigninSteps {
-	private signinpage sgn = new signinpage(Factory.DriverFactory.getDriver());
+	private signinpage sgn = new signinpage(DriverFactory.getDriver());
 	@Given("Browser is open")
 	public void browser_is_open() {
 	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/");	
@@ -20,8 +20,9 @@ public class SigninSteps {
 	public void user_clicks_on_get_started() {
 		sgn.getstartbtn();
 		System.out.println("success1"); 
+		
 	   	}
-
+ 
 	@When("when user enters signin button")
 	public void when_user_enters_signin_button() {
 		sgn.signinbtn();
@@ -40,40 +41,70 @@ public class SigninSteps {
 	}
 
 	@When("user click login button")
-	public void user_click_login_button() {
-		sgn.loginbtn();
-		System.out.println("success5");
+	public void user_click_login_button() throws InterruptedException{
+		sgn.loginbtn();	
+		Thread.sleep(1000);
 	   	}
-	
 	@Then("it should display message")
 	public void it_should_display_message() {
-		//sgn.popupmsg();
+		sgn.popupmsg();
 		System.out.println("success6");  
-		
+	
+	}
+// second scenario starts from here
+	@When("user enter credentials username as empty {string}")
+	public void user_enter_credentials_username_as_empty(String usernam) {
+		sgn.username(usernam);
+		System.out.println("success3");
+	   
+	}
+
+	@When("user enter password as {string}")
+	public void user_enter_password_as(String passwod) {
+		sgn.password(passwod);
+		System.out.println("success4");
+
 	}
 	
-	@Given("Browser is open2")
-	public void browser_is_open2() {
-	    	}
-
-	@When("user clicks on get started2")
-	public void user_clicks_on_get_started2() {
+	@Then("it should display message for second case")
+	public void it_should_display_message_for_second_case() {                        ///html/body/div[3]
+		sgn.popupmsg();
+		System.out.println("success6");  
+	   	}
+	//third scenario case starts from here
+	
+	@When("user enter wrong username as empty {string}")
+	public void user_enter_wrong_username_as_empty(String usernam) {
+		sgn.username(usernam);
+		System.out.println("success3");
 		}
 
-	@When("when user enters credentials test case2")
-	public void when_user_enters_credentials_test_case2() {
-	    
+	@When("user enter wrong password as {string}")
+	public void user_enter_wrong_password_as(String passwod) {
+		sgn.password(passwod);
+		System.out.println("success4");	
 	}
 
-	@When("clicks on login for sec time")
-	public void clicks_on_login_for_sec_time() {
-	   	}
+	@Then("it should display message for third case")
+	public void it_should_display_message_for_third_case() {
+	System.out.println("success5");
+     }
+	//fourth case starts here
+@When("user enter correct username as empty {string}")
+public void user_enter_correct_username_as_empty(String usernam) {
+	sgn.username(usernam);
+	
+}
 
-	@Then("it should display message for second case")
-	public void it_should_display_message_for_second_case() {
-		
-	   	}
+@When("user enter correct password as {string}")
+public void user_enter_correct_password_as(String passwod){
+	sgn.password(passwod);
+   }
 
-
-
+@Then("it should go to home page by showing username on top")
+public void it_should_go_to_home_page_by_showing_username_on_top() throws InterruptedException  {
+	sgn.signoutbtn();	
+	Thread.sleep(1000);
+	System.out.println("success10");
+   }
 }

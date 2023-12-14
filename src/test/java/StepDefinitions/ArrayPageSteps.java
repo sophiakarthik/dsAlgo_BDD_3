@@ -5,8 +5,9 @@ import java.util.Map;
 
 import Factory.DriverFactory;
 import Pages.ArrayPage;
-import Pages.RegisterPage;
-import Pages.StackPage;
+import Pages.DataStructurePage;
+//import Pages.RegisterPage;
+//import Pages.StackPage;
 import Pages.signinpage;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -14,32 +15,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
-
 public class ArrayPageSteps {
-	
-	private signinpage sgn = new signinpage(Factory.DriverFactory.getDriver());
-	private ArrayPage page;
-	
-	
-	@Given("User is logged in to the application")
-	public void user_is_logged_in_to_the_application(DataTable credTable) {
-	List<Map<String, String>> credentialList = credTable.asMaps();
-	String UserName = credentialList.get(0).get("username");
-	String Password = credentialList.get(0).get("password");
-	
-	DriverFactory.getDriver().get("https://dsportalapp.herokuapp.com/login");
-	
-	page = sgn.dologin(UserName, Password);
-	    
-	}
 
-	@Given ("User is on Home Page")
-	public void user_is_on_home_page(){
-		 String Title =  page.ArrayPageTitle();
-		 System.out.println("The Page title is :"+ Title);
-	}
+	private ArrayPage page = new ArrayPage(Factory.DriverFactory.getDriver());
 
-	
 	@When("User Clicks on the Get Started button under Array Section")
 	public void user_clicks_on_the_get_started_button_under_array_section() {
 	
@@ -75,13 +54,11 @@ public class ArrayPageSteps {
 
 	@When("User gets Array Section")
 	public void user_gets_array_section(DataTable ArraySecList) {
-		//page.GetStartedBtn();
-		//page.ArrayInPython();
+
 		List<String> ExpectedArrayList = ArraySecList.asList();
 		String Title =  page.ArrayPageTitle();
 		System.out.println("I am in Page title is :"+ Title);
 		System.out.println("Expected Array L:ist :"+ ExpectedArrayList);
-	    //page.getArraySecList();
 	    List<String> ActualArrayList = page.getArraySecList();
 	    System.out.println("Actual Array List :"+ ActualArrayList );
 	    
@@ -131,8 +108,7 @@ public class ArrayPageSteps {
 	@Then("User should be redirected to Arrays Using List page")
 	public void user_should_be_redirected_to_arrays_using_list_page() {
 	    page.ChkArrayUsingListsPage();
-	    System.out.println("I completed..... Smoking,,,");
-	}
+	    	}
 	
 
 	@When("User clicks on Basic Operations in Lists button")
@@ -153,5 +129,50 @@ public class ArrayPageSteps {
 	public void user_should_be_redirected_to_applications_of_array_page() {
 	   page.ChkApplicationOfArrayPage();	   
 	}
+	@When("User clicks on Practice Questions in Lists button")
+	public void user_clicks_on_practice_questions_in_lists_button() {
+		page.ArrayInPython();
+		page.PracticeQuesLink();
+	}
+
+	@Then("User should be redirected to Practice Questions in Lists page")
+	public void user_should_be_redirected_to_practice_questions_in_lists_page() {
+		page.ArrayPageTitle();
+	}
+
+	@When("User clicks on Search the array Link")
+	public void user_clicks_on_search_the_array_link() {
+		page.SearchArray();
+	}
+
+	@When("Clicks on the submit button")
+	public void clicks_on_the_submit_button() {
+		page.SubmitBtn();
+	}
+
+	@Then("error message is displayed on the console")
+	public void error_message_is_displayed_on_the_console() {
+	    page.ErrorMsg();
+	    page.Consoleoutput();
+	}
+	@When("User clicks on Max Consecutive Ones Link")
+	public void user_clicks_on_max_consecutive_ones_link() {
+	    page.MaxConsOnes();
+	}
+	@When("User clicks on Find Numbers with Even Number of Digits Link")
+	public void user_clicks_on_find_numbers_with_even_number_of_digits_link() {
+	    page.EvenNoOfDigits();
+	}
+	@When("User clicks on Squares of  a Sorted Array Link")
+	public void user_clicks_on_squares_of_a_sorted_array_link() {
+	    page.SquaresOfSortedArray();
+	}
+	@When("User refresh the page")
+	public void user_refresh_the_page() {
+	    page.PageRefresh();
+		 String Title =  page.ArrayPageTitle();
+		 System.out.println("Refresh Page title is :"+ Title);
+	}
+
 	
 }

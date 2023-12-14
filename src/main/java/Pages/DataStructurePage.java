@@ -42,6 +42,9 @@ public void loginbtn(){
 	driver.findElement(login).click();
 	
 }
+public String getHomePageTitle(){
+	return driver.getTitle();
+}
 public void datastructuregetstartbtn() {
 	driver.findElement(getstarted).click();
 }
