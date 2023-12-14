@@ -1,4 +1,4 @@
-Feature: Stack Page Feature
+Feature: Tree Page Feature
 
 Background:
 Given User is logged in to the application
